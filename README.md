@@ -1,7 +1,7 @@
 ## Simple wifi-perimeter scanner
 
-- For OSX only.
-- Meant for my students of Interaction Design.
+- Your client must speak OSC.
+- **For OSX only**.
 
 You are supposed to have the airport utility in your path, so you will have to open up a terminal and type in some commands.
 
