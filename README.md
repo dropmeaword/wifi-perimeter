@@ -2,6 +2,7 @@
 
 - Your client must speak OSC.
 - **For OSX only**.
+- Untested, use at your own peril.
 
 You are supposed to have the airport utility in your path, so you will have to open up a terminal and type in some commands.
 
