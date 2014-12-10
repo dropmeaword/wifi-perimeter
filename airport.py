@@ -44,7 +44,7 @@ def scan():
     p = subprocess.Popen(['airport', '--scan', '--xml'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     plistdict = plistlib.readPlistFromString(out)
-    print("*"*80)
+    #print("*"*80)
     #pprint(plistdict)
     retval = []
     for i in plistdict:
