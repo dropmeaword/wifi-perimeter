@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- encoding: utf-8 -*-
 import sys, os
-import re, requests
+import re
 import time
 import logging
 import airport
@@ -30,7 +30,7 @@ def osc_send_ap(ssid, mac, rssi):
 
 def main(freq):
     # determine time to sleep from frequency
-    wait = 1 / freq
+    wait = 1.0 / float(freq)
     try:
         while True:
             aps = airport.scan()
@@ -38,6 +38,7 @@ def main(freq):
             for ap in aps:
                 osc_send_ap(ap['SSID'], ap['MAC'], ap['RSSI'])
             # sleep for some time
+            print("sleeping for {0}".format(wait))
             time.sleep(wait)
     except KeyboardInterrupt, e:
         print("Goodbye.")
@@ -84,4 +85,5 @@ if __name__ == '__main__':
     verbose = options.verbose
     HOST_ADDRESS = ( options.host, options.port )
 
+    print("Running at frequency {0}".format(options.frequency))
     main(options.frequency)

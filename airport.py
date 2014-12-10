@@ -11,7 +11,7 @@ $ sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Cur
 $ airport --scan --xml
 """
 import sys, os
-import re, requests
+import re
 import logging
 import subprocess
 from pprint import pprint
