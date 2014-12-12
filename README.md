@@ -1,8 +1,8 @@
 ## Simple wifi-perimeter scanner
 
-- Your client must speak OSC.
+- Your client must speak OSC. See Processing example "wifimapping" by Willem Kempers.
 - **For OSX only**.
-- Untested, use at your own peril.
+- Terrible latency. Every time the airport tool is called a 3 second scan is performed. So if you want higher sampling frequencies you will need a more dedicated setup.
 
 You are supposed to have the airport utility in your path, so you will have to open up a terminal and type in some commands.
 
