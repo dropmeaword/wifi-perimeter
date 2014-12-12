@@ -2,9 +2,9 @@
 
 - Your client must speak OSC. See Processing example "wifimapping" by Willem Kempers.
 - **For OSX only**.
-- Terrible latency. Every time the airport tool is called a 3 second scan is performed. So if you want higher sampling frequencies you will need a more dedicated setup.
+- Terrible latency. Every time the airport tool is called a 3 second scan is performed. So if you want higher sampling frequencies you will need a dedicated setup.
 
-You are supposed to have the airport utility in your path, so you will have to open up a terminal and type in some commands.
+You are supposed to have the OSX airport utility in your path, so you will have to open up a terminal and type in some commands.
 
 Create a symbolic link to the airport utility in your path:
 
